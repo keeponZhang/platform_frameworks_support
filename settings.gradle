@@ -309,3 +309,9 @@ if (!startParameter.projectProperties.containsKey('android.injected.invoked.from
 // dumb test project that has a test for each size to ensure that at least one test is run
 // for each size and test runner is happy when there is nothing to test.
 includeProject(":dumb-tests", "dumb-tests")
+include ':lint-checks'
+include ':jetpad-integration'
+project(':lint-checks').projectDir = new File(rootDir, 'buildSrc/lint-checks/')
+project(':jetpad-integration').projectDir = new File(rootDir, 'buildSrc/jetpad-integration/')
+include ':lint-checks'
+include ':jetpad-integration'

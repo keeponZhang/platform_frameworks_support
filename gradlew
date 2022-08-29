@@ -88,7 +88,7 @@ DEFAULT_JVM_OPTS="-DLINT_API_DATABASE=$APP_HOME/../../prebuilts/fullsdk-$plat/pl
 # Gradle automatically invokes 'jar' task on 'buildSrc/' projects so this will always be available.
 export ANDROID_LINT_JARS="$OUT_DIR/buildSrc/lint-checks/build/libs/lint-checks.jar"
 # override JAVA_HOME, because CI machines have it and it points to very old JDK
-export JAVA_HOME="$APP_HOME/../../prebuilts/jdk/jdk8/$plat-x86"
+#export JAVA_HOME="$APP_HOME/../../prebuilts/jdk/jdk8/$plat-x86"
 
 # ----------------------------------------------------------------------------
 

@@ -113,18 +113,18 @@ class DiffAndDocs private constructor(
                 rule.offline
             }
 
-            val generateDocsTask = createGenerateDocsTask(
-                project = root, generateSdkApiTask = generateSdkApiTask,
-                doclavaConfig = doclavaConfiguration,
-                supportRootFolder = supportRootFolder, dacOptions = dacOptions,
-                destDir = File(root.docsDir(), rule.name),
-                taskName = "${rule.name}DocsTask",
-                offline = offline)
-            docsTasks[rule.name] = generateDocsTask
-            val createDistDocsTask = createDistDocsTask(root, generateDocsTask, rule.name)
-            anchorTask.configure { task ->
-                task.dependsOn(createDistDocsTask)
-            }
+            //val generateDocsTask = createGenerateDocsTask(
+            //    project = root, generateSdkApiTask = generateSdkApiTask,
+            //    doclavaConfig = doclavaConfiguration,
+            //    supportRootFolder = supportRootFolder, dacOptions = dacOptions,
+            //    destDir = File(root.docsDir(), rule.name),
+            //    taskName = "${rule.name}DocsTask",
+            //    offline = offline)
+            //docsTasks[rule.name] = generateDocsTask
+            //val createDistDocsTask = createDistDocsTask(root, generateDocsTask, rule.name)
+            //anchorTask.configure { task ->
+            //    task.dependsOn(createDistDocsTask)
+            //}
         }
 
         root.tasks.register("generateDocs") { task ->

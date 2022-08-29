@@ -29,6 +29,7 @@ buildscript {
     apply from: 'buildSrc/repos.gradle'
     apply from: 'buildSrc/build_dependencies.gradle'
     repos.addMavenRepositories(repositories)
+    println "${ext.supportRootFolder}"
     SdkHelperKt.setSdkInLocalPropertiesFile(ext.supportRootFolder)
 
     dependencies {
