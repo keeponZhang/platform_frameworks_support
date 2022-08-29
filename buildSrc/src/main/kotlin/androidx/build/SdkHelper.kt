@@ -31,6 +31,7 @@ fun setSdkInLocalPropertiesFile(supportRoot: File) {
  */
 fun setSdkInLocalPropertiesFile(supportRoot: File, propertiesFile: File) {
     val sdkPath = getSdkPath(supportRoot)
+    println("setSdkInLocalPropertiesFile sdkPath =$sdkPath")
     if (sdkPath.exists()) {
         val props = File(propertiesFile, "local.properties")
         // gradle always deliminate directories with '/' regardless of the OS.
@@ -53,7 +54,7 @@ fun setSdkInLocalPropertiesFile(supportRoot: File, propertiesFile: File) {
  * Returns the appropriate SDK path.
  */
 fun getSdkPath(supportRoot: File): File {
-    if (isUnbundledBuild(supportRoot)) {
+    if (true) {
         val properties = Properties()
         val propertiesFile = File(supportRoot, "local.properties")
         if (propertiesFile.exists()) {

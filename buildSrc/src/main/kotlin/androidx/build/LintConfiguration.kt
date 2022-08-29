@@ -50,7 +50,7 @@ fun Project.configureLint(lintOptions: LintOptions, extension: AndroidXExtension
     // especially relevant for checks which cause hundreds or more failures.
     afterEvaluate {
         lintOptions.apply {
-            isAbortOnError = true
+            isAbortOnError = false
             isIgnoreWarnings = true
 
             // Skip lintVital tasks on assemble. We explicitly run lintRelease for libraries.

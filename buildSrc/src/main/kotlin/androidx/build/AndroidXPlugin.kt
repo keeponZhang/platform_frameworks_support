@@ -537,7 +537,7 @@ class AndroidXPlugin : Plugin<Project> {
         }
 
         lintOptions.apply {
-            isAbortOnError = true
+            isAbortOnError = false
 
             val baseline = project.lintBaseline
             if (baseline.exists()) {
