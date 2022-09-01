@@ -10,3 +10,21 @@
 [submodule "fragment"]
 	path = fragment
 	url = git@github.com:keeponZhang/platform_frameworks_support_fragment.git
+[submodule "lifecycle"]
+	path = lifecycle
+	url = git@github.com:keeponZhang/platform_frameworks_support_lifecycle.git
+[submodule "recyclerview"]
+	path = recyclerview
+	url = git@github.com:keeponZhang/platform_frameworks_support_recyclerview.git
+[submodule "room"]
+	path = room
+	url = git@github.com:keeponZhang/platform_frameworks_support_room.git
+[submodule "work"]
+	path = work
+	url = git@github.com:keeponZhang/platform_frameworks_support_work.git
+[submodule "paging"]
+	path = paging
+	url = git@github.com:keeponZhang/platform_frameworks_support_paging.git
+[submodule "navigation"]
+	path = navigation
+	url = git@github.com:keeponZhang/platform_frameworks_support_navigation.git
