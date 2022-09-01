@@ -1,3 +1,9 @@
 [submodule "core"]
 	path = core
 	url = git@github.com:keeponZhang/platform_frameworks_support_core.git
+[submodule "appcompat"]
+	path = appcompat
+	url = git@github.com:keeponZhang/platform_frameworks_support_appcompat.git
+[submodule "activity"]
+	path = activity
+	url = git@github.com:keeponZhang/platform_frameworks_support_activity.git
