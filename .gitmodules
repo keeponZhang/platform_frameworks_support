@@ -7,3 +7,6 @@
 [submodule "activity"]
 	path = activity
 	url = git@github.com:keeponZhang/platform_frameworks_support_activity.git
+[submodule "fragment"]
+	path = fragment
+	url = git@github.com:keeponZhang/platform_frameworks_support_fragment.git
